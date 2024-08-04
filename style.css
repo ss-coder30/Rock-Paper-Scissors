@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #bfcbc2;
+}
+
+h1 {
+    background-color: #003844;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+}
+
+.choice:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    gap: 5rem;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+
+
+.msg-container {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.msg {
+    background-color: #003844;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+button {
+    background-color: #003844;
+    color: white;
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .choice {
+        height: 125px;
+        width: 125px;
+    }
+
+    img {
+        height: 115px;
+        width: 115px;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .score-board {
+        flex-direction: column; /* Stack scores vertically */
+        gap: 2rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+
+    .msg {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .msg-container {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choices {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2rem;
+    }
+
+    .msg-container {
+        margin-top: 3rem;
+        margin-bottom: 2rem;;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
